@@ -11,7 +11,7 @@
         <h1>Welcome to the polllll</h1>
         <p class="lead">This is the poll app, where you can take a vote a choice you like. Choose one:</p>
         {% for quest in questions %}
-            <p>{{quest.question_text}}</p>
+            <p><a href="{% url 'poll:detail_question' quest.id %}">{{quest.question_text}}</a></p>
         {% endfor %}
 
       </div>
