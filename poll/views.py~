@@ -142,7 +142,7 @@ def main():
     results = service.users().labels().list(userId='me').execute()
     labels = results.get('labels', [])
 
-    message = create_message('alviandk@gmail.com', 'alviandk@gmail.com', 'test subject', '<h1>Ini judul</h1><p>test_message</p>')
+    message = create_message('alviandk@gmail.com', 'alvian.kurnianto@mekar.id', 'test subject', '<h1>Ini judul</h1><p>test_message</p>')
     send_message(service, 'me', message)
 
     print('sent message')
